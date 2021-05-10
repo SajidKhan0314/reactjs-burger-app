@@ -1,7 +1,7 @@
 import axios from 'axios';
 import * as actionTypes from './actionTypes';
 
-const apiKey = 'apiKey';
+const apiKey = process.env.REACT_APP_API_KEY;
 
 export const clearMessages = () => {
     return {
